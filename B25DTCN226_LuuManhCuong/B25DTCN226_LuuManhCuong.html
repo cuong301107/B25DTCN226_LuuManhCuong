@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân - Lưu Mạnh Cường</title>
+    <link rel="stylesheet" href="B25DTCN226_LuuManhCuong.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo-area">
+          <img src="images/B25DTCN226_logo.png" alt="Logo" class="logo" />
+          <h1 class="site-title">Trang cá nhân</h1>
+        </div>
+        <div class="clock" id="clock">--:--:--</div>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="container">
+      <!-- === Card thông tin cá nhân === -->
+      <section class="card profile-card">
+        <div class="profile-left">
+          <img
+            src="images/avatar.jpg"
+            alt="Ảnh đại diện"
+            class="avatar"
+            id="avatarImg"
+          />
+          <p class="avatar-hint">(Nhấn vào ảnh để phóng to)</p>
+        </div>
+        <div class="profile-right">
+          <h2>Lưu Mạnh Cường</h2>
+          <ul class="info-list">
+            <li><span>Mã sinh viên:</span> B25DTCN226</li>
+            <li><span>Họ và tên:</span> Lưu Mạnh Cường</li>
+            <li><span>Lớp:</span> D25CNTT1</li>
+            <li>
+              <span>Trường:</span> Học viện Công nghệ Bưu chính Viễn thông
+            </li>
+            <li><span>Email:</span> luumanhcuong@ptit.edu.vn</li>
+            <li><span>Số điện thoại:</span> 0123 456 789</li>
+            <li><span>Ngày sinh:</span> 01/01/2005</li>
+            <li><span>Giới tính:</span> Nam</li>
+            <li><span>Địa chỉ:</span> Hà Nội</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- === Card công việc hiện tại === -->
+      <section class="card">
+        <h2 class="section-title">Công việc hiện tại</h2>
+        <div class="job-info">
+          <h3>Sinh viên / Thực tập sinh Lập trình Web</h3>
+          <p class="company">Học viện Công nghệ Bưu chính Viễn thông (PTIT)</p>
+          <p class="desc">
+            Đang học tập và nghiên cứu các công nghệ phát triển web hiện đại như
+            HTML, CSS, JavaScript. Tham gia các dự án nhỏ về xây dựng giao diện
+            responsive và tối ưu trải nghiệm người dùng trên nhiều thiết bị.
+          </p>
+        </div>
+      </section>
+
+      <!-- === Card sở thích (có ẩn/hiện) === -->
+      <section class="card">
+        <h2 class="section-title">Sở thích cá nhân</h2>
+        <button class="toggle-btn" id="toggleBtn">Xem thêm</button>
+
+        <div class="hobby-wrapper" id="hobbyWrapper">
+          <ul class="hobby-list">
+            <li>
+              <span class="hobby-icon"></span>
+              <div>
+                <strong>Đá bóng</strong>
+                <p>
+                  Chơi bóng đá mỗi cuối tuần cùng bạn bè để rèn luyện sức khỏe.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="hobby-icon"></span>
+              <div>
+                <strong>Đọc sách</strong>
+                <p>Yêu thích sách công nghệ, kỹ năng mềm và tiểu thuyết.</p>
+              </div>
+            </li>
+            <li>
+              <span class="hobby-icon"></span>
+              <div>
+                <strong>Nghe nhạc</strong>
+                <p>Thư giãn với nhạc lo-fi và nhạc không lời khi làm việc.</p>
+              </div>
+            </li>
+            <li>
+              <span class="hobby-icon"></span>
+              <div>
+                <strong>Lập trình</strong>
+                <p>
+                  Đam mê tìm hiểu công nghệ mới và xây dựng các dự án web nhỏ.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2 class="section-title">Liên kết mạng xã hội</h2>
+        <div class="social-list">
+          <a
+            href="https://www.facebook.com/Karin.30117/?locale=vi_VN"
+            target="_blank"
+            class="social-link facebook"
+          >
+            <span class="social-icon">f</span> Facebook
+          </a>
+          <a href="https://zalo.me/" target="_blank" class="social-link zalo">
+            <span class="social-icon">Z</span> Zalo
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="social-link github"
+          >
+            <span class="social-icon">G</span> GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        &copy; <span id="year"></span> Lưu Mạnh Cường - MSSV B25DTCN226. All
+        rights reserved.
+      </p>
+    </footer>
+
+    <div class="modal" id="imageModal">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img
+        src="images/avatar.jpg"
+        alt="Ảnh đại diện phóng to"
+        class="modal-img"
+      />
+    </div>
+
+    <script src="B25DTCN226_LuuManhCuong.js"></script>
+  </body>
+</html>
